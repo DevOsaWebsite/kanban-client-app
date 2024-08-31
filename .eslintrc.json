@@ -74,20 +74,13 @@
     ],
     "react-hooks/rules-of-hooks": 2,
     "react-hooks/exhaustive-deps": 1,
+    "react/prop-types": 0,
     "@typescript-eslint/consistent-type-imports": 2,
     "@typescript-eslint/default-param-last": 2,
     "@typescript-eslint/no-unused-vars": [2, {"args": "none"}],
     "@typescript-eslint/no-explicit-any": 2,
     "@typescript-eslint/explicit-module-boundary-types": 2,
     "@typescript-eslint/array-type": [2, {"default": "array-simple"}],
-    "@typescript-eslint/no-misused-promises": [
-      2,
-      {
-        "checksVoidReturn": {
-          "attributes": false
-        }
-      }
-    ],
     "camelcase": 2,
     "array-callback-return": 2,
     "arrow-body-style": [2, "as-needed"],
