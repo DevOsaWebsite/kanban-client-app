@@ -1,0 +1,33 @@
+:root {
+  --palette-primary: 99 95 199;
+  --palette-primary-light: 168 164 255;
+  --palette-primary-on: 255 255 255;
+
+  --palette-background: 244 247 253;
+  --palette-background-paper: 255 255 255;
+  --palette-background-on: 0 1 18;
+  --palette-background-on-paper: 130 143 163;
+
+  --palette-outline: 228 235 250;
+
+  --palette-error: 234 85 85;
+  --palette-error-light: 255 152 152;
+  --palette-error-on: 255 255 255;
+
+  html[data-theme='dark'] {
+    --palette-primary: 99 95 199;
+    --palette-primary-light: 168 164 255;
+    --palette-primary-on: 255 255 255;
+
+    --palette-background: 32 33 44;
+    --palette-background-paper: 43 44 55;
+    --palette-background-on: 255 255 255;
+    --palette-background-on-paper: 130 143 163;
+
+    --palette-outline: 62 63 78;
+
+    --palette-error: 234 85 85;
+    --palette-error-light: 255 152 152;
+    --palette-error-on: 255 255 255;
+  }
+}
