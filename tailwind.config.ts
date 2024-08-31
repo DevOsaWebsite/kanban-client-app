@@ -36,6 +36,9 @@ const config: Config = {
       screens: {
         xs: '375px',
       },
+      width: {
+        sidebar: '260px',
+      },
     },
   },
   plugins: [],
