@@ -1,6 +1,7 @@
 import React, {type ReactNode} from 'react';
 
 import {Header} from './_components/header';
+import {Sidebar} from './_components/sidebar';
 
 interface BoardLayoutProps {
   children: ReactNode;
@@ -14,7 +15,10 @@ const BoardLayout = (props: BoardLayoutProps): React.JSX.Element => {
   return (
     <>
       <Header />
-      <main>{children}</main>
+      <div className='flex flex-1'>
+        <Sidebar />
+        <main className=''>{children}</main>
+      </div>
     </>
   );
 };
