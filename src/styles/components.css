@@ -1,0 +1,10 @@
+@layer components {
+  .button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    appearance: none;
+    transition: all 0.2s ease;
+  }
+}
