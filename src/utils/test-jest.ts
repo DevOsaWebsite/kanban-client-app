@@ -4,4 +4,4 @@ export const sum = (arr: number[]): number => {
   }
 
   return arr[0] + sum(arr.slice(1));
-}
+};
