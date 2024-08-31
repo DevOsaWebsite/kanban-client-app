@@ -1,7 +1,10 @@
+import {VerticalEllipsisIcon} from '@/components/icons/vertical-ellipsis-icon';
 import {Typography} from '@/components/typography';
 import {cn} from '@/utils/classnames';
 import Image from 'next/image';
 import React from 'react';
+
+import {AddNewTask} from './add-new-task';
 
 export const Header = (): React.JSX.Element => {
   console.log('Header');
@@ -32,9 +35,11 @@ export const Header = (): React.JSX.Element => {
           </Typography>
           <span className='inline-flex group-hover:rotate-90'>v</span>
         </div>
-        <div className=''>
-          <button>+</button>
-          <button>...</button>
+        <div className='flex items-center justify-center gap-1'>
+          <AddNewTask />
+          <button className='button p-5 hover:bg-primary-light/10 rounded-full h-8 sx:h-12'>
+            <VerticalEllipsisIcon />
+          </button>
         </div>
       </nav>
     </header>

@@ -13,8 +13,8 @@ const variantProps = cva('button min-w-64 font-bold', {
         'bg-error  text-error-on hover:bg-error-light focus:bg-error-light focus-visible:bg-error-light focus-within:bg-error-light',
     },
     size: {
-      lg: 'px-4 py-4 text-xs rounded-3xl',
-      md: 'px-4 py-2 text-xs/6 rounded-[20px]',
+      lg: 'px-6 py-4 text-xs rounded-3xl',
+      md: 'px-6 py-2 text-xs/6 rounded-full',
     },
   },
   defaultVariants: {

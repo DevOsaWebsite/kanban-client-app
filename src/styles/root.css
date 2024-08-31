@@ -14,7 +14,7 @@
   --palette-error-light: 255 152 152;
   --palette-error-on: 255 255 255;
 
-  html[data-theme='dark'] {
+  &html[data-theme='dark'] {
     --palette-primary: 99 95 199;
     --palette-primary-light: 168 164 255;
     --palette-primary-on: 255 255 255;
