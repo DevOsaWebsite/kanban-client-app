@@ -1,5 +1,7 @@
 import {Button} from '@/components/button';
 import {BoardIcon} from '@/components/icons/board-icon';
+import {DarkThemeIcon} from '@/components/icons/dark-theme-icon';
+import {LightThemeIcon} from '@/components/icons/light-theme-icon';
 import {Typography} from '@/components/typography';
 import {cn} from '@/utils/classnames';
 import React from 'react';
@@ -55,6 +57,8 @@ const Item = ({
 export const Sidebar = (): React.JSX.Element => {
   console.log('Sidebar');
   const isOpen = true;
+  const mode: 'dark' | 'light' = 'dark';
+  const checked = mode === 'dark';
 
   return (
     <aside
@@ -63,8 +67,8 @@ export const Sidebar = (): React.JSX.Element => {
         'block w-sidebar': isOpen,
       })}
     >
-      <div className='py-8'>
-        <nav>
+      <div className='h-full py-8 flex flex-col'>
+        <nav className='flex-1'>
           <div className='pl-6'>
             <Typography
               component={'h2'}
@@ -88,6 +92,36 @@ export const Sidebar = (): React.JSX.Element => {
             />
           </ul>
         </nav>
+        <div className='px-3'>
+          <div className='rounded-md bg-background w-full h-12'>
+            <div className='w-full h-full flex items-center justify-center text-background-on-paper gap-x-6'>
+              <span>
+                <LightThemeIcon size={20} />
+              </span>
+              <button
+                className={cn(
+                  'inline-flex w-10 h-5 bg-primary rounded-full relative',
+                )}
+              >
+                <button
+                  className={cn(
+                    'inline-flex w-[14px] h-[14px] bg-white rounded-full cursor-pointer absolute top-1/2 transform -translate-y-1/2 transition-transform duration-300 ease-in-out',
+                    {
+                      'left-[3px]': !checked,
+                      'right-[3px]': checked,
+                    },
+                  )}
+                />
+              </button>
+              <span>
+                <DarkThemeIcon size={16} />
+              </span>
+            </div>
+          </div>
+        </div>
+        <div className='py-2 pr-5'>
+          <Item name='Hide Sidebar' />
+        </div>
       </div>
     </aside>
   );
