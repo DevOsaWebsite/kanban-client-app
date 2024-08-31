@@ -1,3 +1,4 @@
+// eslint-disable-next-line n/no-extraneous-import
 import {type Config} from '@jest/types';
 import nextJest from 'next/jest.js';
 
@@ -15,4 +16,5 @@ const createJestConfig = nextJest({
   dir: './',
 });
 
+// eslint-disable-next-line import/no-default-export
 export default createJestConfig(config);
