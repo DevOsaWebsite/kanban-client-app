@@ -11,7 +11,7 @@ export const Sidebar = (): React.JSX.Element => {
     <aside
       className={cn('bg-background-paper h-full border-r border-outline ', {
         'hidden w-0': !isOpen,
-        'block w-60': isOpen,
+        'block w-sidebar': isOpen,
       })}
     >
       aside
