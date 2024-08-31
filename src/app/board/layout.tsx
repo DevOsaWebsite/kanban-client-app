@@ -1,12 +1,21 @@
-import React from 'react';
+import React, {type ReactNode} from 'react';
 
-const BoardLayout = (): React.JSX.Element => {
+import {Header} from './_components/header';
+
+interface BoardLayoutProps {
+  children: ReactNode;
+}
+
+const BoardLayout = (props: BoardLayoutProps): React.JSX.Element => {
   console.log('BoardLayout');
 
+  const {children} = props;
+
   return (
-    <main className='w-full h-full flex flex-col items-center justify-center gap-4 py-40'>
-      <h1>Board Layout</h1>
-    </main>
+    <>
+      <Header />
+      <main>{children}</main>
+    </>
   );
 };
 
