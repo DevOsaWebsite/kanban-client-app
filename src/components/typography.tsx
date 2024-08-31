@@ -12,7 +12,7 @@ const variantProps = cva('typography', {
     variant: {
       headingXl: 'text-2xl font-bold',
       headingLg: 'text-lg/6 font-bold',
-      headingMd: 'text-base/5 font-bold',
+      headingMd: 'text-[15px]/5 font-bold',
       headingSm: 'text-xs font-bold tracking-[0.2em]',
       bodyLg: 'text-[13px]/6',
       body: 'text-xs/4 font-bold',
