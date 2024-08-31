@@ -1,9 +1,21 @@
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+@layer base {
+  html,
+  body {
+    size: 100%;
+    min-height: 100%;
+  }
+
+  body {
+    background: theme('colors.background.DEFAULT');
+    color: theme('colors.background.on');
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+
+  main {
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+  }
 }
