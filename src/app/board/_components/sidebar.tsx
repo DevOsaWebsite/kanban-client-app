@@ -1,6 +1,8 @@
 import {cn} from '@/utils/classnames';
 import React from 'react';
 
+// TODO: Animate sidebar
+
 export const Sidebar = (): React.JSX.Element => {
   console.log('Sidebar');
   const isOpen = true;
